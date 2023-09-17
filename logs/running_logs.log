@@ -1,0 +1,110 @@
+[2023-09-17 23:50:26,480: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.228:8080]
+[2023-09-17 23:50:26,482: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-09-17 23:50:26,791: INFO: _internal:  * Restarting with stat]
+[2023-09-17 23:50:33,790: WARNING: _internal:  * Debugger is active!]
+[2023-09-17 23:50:33,795: INFO: _internal:  * Debugger PIN: 125-714-850]
+[2023-09-17 23:50:40,052: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:50:40] "GET / HTTP/1.1" 200 -]
+[2023-09-17 23:50:40,192: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:50:40] "GET / HTTP/1.1" 200 -]
+[2023-09-17 23:50:43,738: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:50:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2023-09-17 23:50:44,009: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:50:44] "GET / HTTP/1.1" 200 -]
+[2023-09-17 23:51:00,281: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:51:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-09-17 23:51:18,140: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:51:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-09-17 23:52:13,178: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-17 23:52:13,209: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-17 23:52:13,276: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-17 23:52:13,297: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-17 23:52:13,300: INFO: common: created directory at: artifacts]
+[2023-09-17 23:52:13,300: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-17 23:52:18,575: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 10849659
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "892cc69385a2688f1dc599caa66fd814b80081f939dd62bed7d83ea7298aceb7"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A2E4:57B8:124478:15E5B9:65073CCE
+Accept-Ranges: bytes
+Date: Sun, 17 Sep 2023 17:52:15 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1222-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1694973134.403374,VS0,VE846
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 98f85c99ba4b11859a70d9e802b8a71deba26c57
+Expires: Sun, 17 Sep 2023 17:57:15 GMT
+Source-Age: 1
+
+]
+[2023-09-17 23:52:19,156: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-17 23:52:19,156: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-17 23:52:19,173: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-17 23:52:19,173: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-17 23:52:19,173: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-17 23:52:19,173: INFO: common: created directory at: artifacts]
+[2023-09-17 23:52:19,173: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-17 23:52:21,616: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-17 23:52:21,616: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-09-17 23:52:21,616: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-17 23:52:21,635: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-17 23:52:21,642: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-17 23:52:21,642: INFO: common: created directory at: artifacts]
+[2023-09-17 23:52:21,642: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-17 23:52:23,134: INFO: data_transformtion: Splited data into training and test sets]
+[2023-09-17 23:52:23,134: INFO: data_transformtion: (15473, 12)]
+[2023-09-17 23:52:23,134: INFO: data_transformtion: (5158, 12)]
+[2023-09-17 23:52:23,134: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-09-17 23:52:23,134: INFO: main: >>>>>> stage Prepare Base Model stage started <<<<<<]
+[2023-09-17 23:52:23,159: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-17 23:52:23,162: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-17 23:52:23,163: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-17 23:52:23,163: INFO: common: created directory at: artifacts]
+[2023-09-17 23:52:23,171: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-09-17 23:52:29,166: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-09-17 23:52:29,686: INFO: main: >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x]
+[2023-09-17 23:52:29,686: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-09-17 23:52:29,703: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-17 23:52:29,703: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-17 23:52:29,703: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-17 23:52:29,703: INFO: common: created directory at: artifacts]
+[2023-09-17 23:52:29,703: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-17 23:53:19,515: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2023-09-17 23:53:19,517: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2023-09-17 23:53:19,528: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-17 23:53:19,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-17 23:53:19,535: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-17 23:53:19,536: INFO: common: created directory at: artifacts]
+[2023-09-17 23:53:19,547: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-09-17 23:53:22,628: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2023-09-17 23:53:37,526: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2023-09-17 23:54:44,259: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.228:8080]
+[2023-09-17 23:54:44,260: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-09-17 23:54:44,366: INFO: _internal:  * Restarting with stat]
+[2023-09-17 23:54:52,082: WARNING: _internal:  * Debugger is active!]
+[2023-09-17 23:54:52,089: INFO: _internal:  * Debugger PIN: 125-714-850]
+[2023-09-17 23:54:52,965: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:54:52] "GET / HTTP/1.1" 200 -]
+[2023-09-17 23:55:02,773: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:55:02] "POST /predict HTTP/1.1" 200 -]
