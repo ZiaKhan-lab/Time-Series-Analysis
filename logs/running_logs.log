@@ -108,3 +108,8 @@ x==========x]
 [2023-09-17 23:54:52,089: INFO: _internal:  * Debugger PIN: 125-714-850]
 [2023-09-17 23:54:52,965: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:54:52] "GET / HTTP/1.1" 200 -]
 [2023-09-17 23:55:02,773: INFO: _internal: 127.0.0.1 - - [17/Sep/2023 23:55:02] "POST /predict HTTP/1.1" 200 -]
+[2023-09-18 00:25:02,805: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.228:8080]
+[2023-09-18 00:25:02,806: INFO: _internal: [33mPress CTRL+C to quit[0m]
