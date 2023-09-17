@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+</head>
+
+<body>
+    <h1>Interactive Time Series Data Analysis Website</h1>
+
+    <input type="file" id="fileInput" accept=".txt"><br><br>
+
+    <button type="file" id="fileInput" onclick="uploadFile()">Upload</button>
+    <button onclick="predict()">Predict</button>
+    <div id="error-message"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script >
+
+        var files=""
+
+        function sendRequest(textData) {
+            
+            const url = 'http://127.0.0.1:8080/predict';  // Replace with your actual local server URL
+            // Replace with your actual server endpoint
+            const data = { text: textData };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json(); // Assuming the server responds with JSON
+            })
+            .then(responseData => {
+                console.log('Request successful:', responseData);
+        // Process the server response as needed
+            })
+            .catch(error => {
+                console.error('Request failed:', error);
+        // Handle errors
+            });
+        }
+
+
+        function uploadFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const textContent = event.target.result;
+                sendRequest(textContent);  // Send the text content to the server
+            }
+
+            reader.readAsText(file);
+            files=file.name
+
+            // You can add file upload logic here
+            console.log('File uploaded:', file.name);
+        }
+
+        function predict() {
+            // You can add prediction logic here
+            document.getElementById('error-message').innerText = '';
+            const iframe = document.createElement('iframe');
+            iframe.title = 'Time Series Analysis';
+            iframe.width = '1140';
+            iframe.height = '541.25';
+            files
+            if (files === 'test_FD001.txt') {
+                iframe.src = 'https://app.powerbi.com/reportEmbed?reportId=48068f87-c6b6-439f-ab91-78d15f2d0ae6&autoAuth=true&ctid=1930820c-5fb0-43d5-ad62-5fcce95fd551';
+            } else if(files === 'test_FD002.txt'){
+                // Set a different URL for other file names
+                iframe.src = 'https://app.powerbi.com/reportEmbed?reportId=8de00ae4-7f63-4cf1-82ca-5d485d1b9b9f&autoAuth=true&ctid=1930820c-5fb0-43d5-ad62-5fcce95fd551';
+            }else if(files === 'test_FD003.txt'){
+                // Set a different URL for other file names
+                iframe.src = 'https://app.powerbi.com/reportEmbed?reportId=404c92ba-bf53-48e6-939e-be2d5d47af58&autoAuth=true&ctid=1930820c-5fb0-43d5-ad62-5fcce95fd551';
+            }else if(files === 'test_FD004.txt'){
+                // Set a different URL for other file names
+                iframe.src = 'https://app.powerbi.com/reportEmbed?reportId=2b7da48c-797c-4ada-a4fd-6aae36c3df29&autoAuth=true&ctid=1930820c-5fb0-43d5-ad62-5fcce95fd551';
+            }else {
+                // Set a different URL for other file names
+                //iframe.src = 'https://google.com/';
+                document.getElementById('error-message').innerText = 'Incorrect input. Please enter a valid input.';
+}
+
+            //iframe.src = 'https://app.powerbi.com/reportEmbed?reportId=90747caa-82e7-4b68-9f2e-7876398c6f49&autoAuth=true&ctid=1930820c-5fb0-43d5-ad62-5fcce95fd551';
+            iframe.frameBorder = '0';
+            iframe.allowFullscreen = true;
+
+            // Replace the existing iframe (if any) with the new one
+            const existingIframe = document.getElementById('predictionIframe');
+            if (existingIframe) {
+                existingIframe.parentNode.replaceChild(iframe, existingIframe);
+            } else {
+                iframe.id = 'predictionIframe';  // Assign an ID to the iframe
+                document.body.appendChild(iframe);
+            }
+            console.log('Predict button clicked');
+        }
+    </script>
+</body>
+
+</html>

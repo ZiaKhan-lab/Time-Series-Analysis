@@ -1,0 +1,33 @@
+COLUMNS:
+  id : int
+  cycle : int
+  op1 : float64
+  op2 : float64
+  op3 : float64
+  sensor1 : float64
+  sensor2 : float64
+  sensor3 : float64
+  sensor4 : float64
+  sensor5 : float64
+  sensor6 : float64
+  sensor7 : float64
+  sensor8 : float64
+  sensor9 : float64
+  sensor10 : float64
+  sensor11 : float64
+  sensor12 : float64
+  sensor13 : float64
+  sensor14 : float64
+  sensor15 : float64
+  sensor16 : float64
+  sensor17 : float64
+  sensor18 : float64
+  sensor19 : float64
+  sensor20 : float64
+  sensor21 : float64
+  sensor22 : float64
+  sensor23 : float64
+
+TARGET_COLUMN:
+  name : label
+
