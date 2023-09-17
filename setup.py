@@ -6,10 +6,10 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.1"
 
-REPO_NAME = "end-to-end-time-series-data-analysis-with-mlflow"
-AUTHOR_USER_NAME = "Dipeshshome"
+REPO_NAME = "Time-Series-Analysis"
+AUTHOR_USER_NAME = "ZiaKhan-lab"
 SRC_REPO = "TimeSeriesProject"
-AUTHOR_EMAIL = "dshome.cse@gmail.com"
+AUTHOR_EMAIL = "ziaurrehmankhan921@knu.ac.kr"
 
 
 setuptools.setup(
