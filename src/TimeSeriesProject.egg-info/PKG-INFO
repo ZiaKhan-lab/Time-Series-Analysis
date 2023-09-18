@@ -28,7 +28,7 @@ License-File: LICENSE
 Clone the repository
 
 ```bash
-https://github.com/Dipeshshome/end-to-end-time-series-data-analysis-with-mlflow
+https://github.com/ZiaKhan-lab/Time-Series-Analysis
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
@@ -70,20 +70,20 @@ open up you local host and port
 ### dagshub
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/Dipeshshome/end-to-end-time-series-data-analysis-with-mlflow.mlflow \
-MLFLOW_TRACKING_USERNAME=Dipeshshome \
-MLFLOW_TRACKING_PASSWORD=21dc2e1210a654b7de3c8b6f4cebf28caa37aab9 \
+MLFLOW_TRACKING_URI=https://dagshub.com/ZiaKhan-lab/Time-Series-Analysis.mlflow \
+MLFLOW_TRACKING_USERNAME=ZiaKhan-lab \
+MLFLOW_TRACKING_PASSWORD=97d7fb046ad2fd0cb037c896e1e372d4cc25ed56 \
 python script.py
 
 Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/Dipeshshome/end-to-end-time-series-data-analysis-with-mlflow.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/ZiaKhan-lab/Time-Series-Analysis.mlflow
 
-export MLFLOW_TRACKING_USERNAME=Dipeshshome 
+export MLFLOW_TRACKING_USERNAME=ZiaKhan-lab 
 
-export MLFLOW_TRACKING_PASSWORD=21dc2e1210a654b7de3c8b6f4cebf28caa37aab9
+export MLFLOW_TRACKING_PASSWORD=97d7fb046ad2fd0cb037c896e1e372d4cc25ed56
 
 ```
 
@@ -122,7 +122,7 @@ export MLFLOW_TRACKING_PASSWORD=21dc2e1210a654b7de3c8b6f4cebf28caa37aab9
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
+    - Save the URI: 132250821718.dkr.ecr.eu-north-1.amazonaws.com/times-series
 
 	
 ## 4. Create EC2 machine (Ubuntu) 

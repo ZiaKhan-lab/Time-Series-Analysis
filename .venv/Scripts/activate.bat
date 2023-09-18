@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=f:\Time Series Data Analysis (Upwork)\upwork\Time-Series-Analysis\.venv
+set VIRTUAL_ENV=c:\Users\M.ZIA UR REHMAN KHAN\Desktop\MLOps\Time-Series-Analysis\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 

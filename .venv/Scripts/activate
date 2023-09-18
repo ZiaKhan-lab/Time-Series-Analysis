@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="f:\Time Series Data Analysis (Upwork)\upwork\Time-Series-Analysis\.venv"
+VIRTUAL_ENV="c:\Users\M.ZIA UR REHMAN KHAN\Desktop\MLOps\Time-Series-Analysis\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
