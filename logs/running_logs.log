@@ -113,3 +113,8 @@ x==========x]
  * Running on http://127.0.0.1:8080
  * Running on http://192.168.31.228:8080]
 [2023-09-18 00:25:02,806: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-09-18 23:20:36,009: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-18 23:20:36,077: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-18 23:20:36,089: INFO: common: created directory at: artifacts]
+[2023-09-18 23:20:36,096: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-18 23:20:36,105: INFO: 2133201934: File already exists of size: ~ 10595 KB]
