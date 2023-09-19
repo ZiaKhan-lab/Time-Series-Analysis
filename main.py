@@ -18,7 +18,7 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-STAGE_NAME = "Data Validation stage"
+STAGE_NAME = "Data Validation stages"
 try:
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
    data_ingestion = DataValidationTrainingPipeline()
