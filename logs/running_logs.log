@@ -118,3 +118,8 @@ x==========x]
 [2023-09-18 23:20:36,089: INFO: common: created directory at: artifacts]
 [2023-09-18 23:20:36,096: INFO: common: created directory at: artifacts/data_ingestion]
 [2023-09-18 23:20:36,105: INFO: 2133201934: File already exists of size: ~ 10595 KB]
+[2023-09-19 13:45:24,771: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.100:8080]
+[2023-09-19 13:45:24,786: INFO: _internal: [33mPress CTRL+C to quit[0m]
