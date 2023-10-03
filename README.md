@@ -102,7 +102,7 @@ export MLFLOW_TRACKING_PASSWORD=97d7fb046ad2fd0cb037c896e1e372d4cc25ed56
 
 	4. Pull Your image from ECR in EC2
 
-	5. Lauch your docker image in EC2
+	5. Lauch your docker image in EC2 r
 
 	#Policy:
 
