@@ -112,7 +112,7 @@ export MLFLOW_TRACKING_PASSWORD=97d7fb046ad2fd0cb037c896e1e372d4cc25ed56
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 132250821718.dkr.ecr.eu-north-1.amazonaws.com/timeseries
+    - Save the URI: 132250821718.dkr.ecr.eu-north-1.amazonaws.com/timeseriesdata
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -124,7 +124,7 @@ export MLFLOW_TRACKING_PASSWORD=97d7fb046ad2fd0cb037c896e1e372d4cc25ed56
 
 	sudo apt-get update -y
 
-	sudo apt-get upgrade
+	sudo apt-get update -y
 	
 	#required
 
