@@ -10,7 +10,7 @@ from src.TimeSeriesProject.pipeline.stage_06_model_evaluation import ModelEvalua
 
 STAGE_NAME = "Data Ingestion stage"
 try:
-    logger.info(f">>>>>> stages {STAGE_NAME} started <<<<<<")
+    logger.info(f">>>>>> stages {STAGE_NAME} starts <<<<<<")
     obj = DataIngestionTrainingPipeline()
     obj.main()
     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
